@@ -278,3 +278,167 @@ console.log(sum(3,20,6));
 
 
 //===========Factory Function================
+
+//object
+/*const circle = {
+    radious:1,
+    position:{
+        x=1,
+        y=1
+    },
+    isVisiting:true,
+
+    draw: function(){
+        console.log('drow');
+    }
+};*/
+/*
+function createCircle(radius){
+return {
+    radius,
+    draw(){
+        console.log('drow');
+    }
+};
+}
+const circle1 = createCircle(1);
+console.log(circle1);
+
+const circle2 = createCircle(3);
+console.log(circle2);
+*/
+
+
+//===============Constructor Function==================
+
+//camel notation : oneTwoThree
+//pascal notation : OneTwoThree
+/*
+function Student(firstName,lastName,dob)
+{
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = new Date(dob);
+    this.getBirthYear = function(){
+       return this.dob.getFullYear();
+    }
+    this.getFullName = function(){
+        return `${firstName} ${lastName}`;
+     }
+}
+//Instantiate Object
+const student1 = new Student('Abu', 'Naiim', '4-22-2021');
+
+//console.log(student1);
+//console.log(student1.dob);
+//document.write(student1.dob)
+//console.log(student1.getBirthYear());
+console.log(student1.getFullName());
+*/
+
+
+//====================Class, Inheritance using object====================
+/*
+//class
+class Student{
+    //constructor
+    constructor(name,age,cls)
+    {
+        this.myname = name;
+        this.myage = age;
+        this.mycls = cls;
+    }
+    //method
+    studentProfile()
+    {
+        console.log(`name: ${this.myname}, age: ${this.myage}, class: ${this.mycls}`);
+    }
+}
+const student1 = new Student('Naiim','21','CSE');
+student1.studentProfile();
+
+const student2 = new Student('Apurbo','21','CSE');
+student2.studentProfile();
+*/
+
+/*
+class Student{
+   constructor(name,age,cls)
+    {
+        this.myname = name;
+        this.myage = age;
+        this.mycls = cls;
+    }
+    //method
+    studentProfile()
+    {
+        return `name: ${this.myname}, age: ${this.myage}, class: ${this.mycls}`;
+    }
+}
+
+
+//Inheritance
+class Player extends Student
+{
+    constructor(name,age,cls,game)
+    {
+        super(name,age,cls);
+        this.mygame = game;
+    }
+ //method
+   player_profile()
+   {
+     return `${super.studentProfile()}. Favourite Play: ${this.mygame}`;
+   }
+}
+
+const student1 = new Player('Naiim','21','CSE','football');
+console.log(student1.player_profile());
+*/
+
+
+
+//=================Understanding 'this' Keyword================
+//method ->object for this
+//function -> global (window, global) for this
+
+const video = {
+    title : 'a',
+    play: function(){
+        console.log(this)
+    }
+}
+/*
+//method ->object for this
+video.stop = function()
+{
+    console.log(this);
+}
+video.stop();
+*/
+
+/*
+//function -> global (window, global) for this
+function videoPlay(title)
+{
+    console.log(this);
+}
+videoPlay();
+*/
+
+/*
+function Video(title)
+{
+    this.title = title;
+    console.log(this);
+}
+const v = new Video('abc'); //{}
+*/
+
+
+
+
+
+
+//window.alert('Hello');
+alert('Hello');
