@@ -176,6 +176,41 @@ z= x ** y;
 console.log(z);
 */
 
+//===================conditional statement===========================
+/*
+const x = 11;
+if(x==10)
+{
+	console.log("10 print")
+}
+else 
+{
+	console.log('Not 10 print')
+}
+*/
+/*
+const x = 9;
+
+if(x==10)
+{
+	console.log("x is equal")
+}
+else if(x > 10)
+{
+	console.log("x is greater than 10")
+}
+else 
+{
+	console.log('x is less than 10')
+}
+*/
+/*
+const x = 11;
+
+const color = x>10 ? 'red' : 'green'
+console.log(color)
+*/
+
 
 //============== simple code =================
 /*
@@ -426,19 +461,19 @@ function videoPlay(title)
 videoPlay();
 */
 
-/*
+
 function Video(title)
 {
     this.title = title;
     console.log(this);
 }
 const v = new Video('abc'); //{}
-*/
 
 
 
+//================alert===================
 
-
-
+/*
 //window.alert('Hello');
 alert('Hello');
+*/

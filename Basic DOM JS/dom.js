@@ -53,3 +53,42 @@ const heading3 =document.getElementsByClassName('h1class');
 heading3[0].innerHTML = " Hello head 1";
 heading3[1].innerHTML = " Hello head 2";
 */
+
+
+
+//=====================querySelector=====================
+/*
+//by class
+const button = document.querySelector('.btnclass2');
+//console.log(button);//test working or not working
+button.style.color = "red";
+*/
+
+/*
+//by id
+const button = document.querySelector('#btnid1');
+button.style.color = "green";
+button.textContent = 'Test button';
+button.style.background = 'yellow';
+*/
+
+/*
+//by tag
+const button = document.querySelector('button');
+button.style.color = "green";
+button.textContent = 'Test button';
+button.style.background = 'yellow';
+*/
+
+const ul = document.querySelector('.items');
+
+ul.firstElementChild.style.color ='green';
+ul.children[1].textContent = "child 1";
+ul.children[2].remove();
+ul.lastElementChild.style.color = "red";
+
+//ul.remove();
+
+//=====================querySelectorAll =====================
+const item = document.querySelectorAll('.item');
+console.log(item);
