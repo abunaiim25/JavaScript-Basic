@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+       
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+                <a class="logo" href="#">ABU-NAIIM</a>
+
+                <ul>
+                    <li class="home active"><a href="#home">Home</a></li>
+                    <li class="about"><a href="#about">About</a></li>
+                    <li class="product"><a href="#product">Product</a></li>
+                    <li class="contact"><a href="#contact">Contact</a></li>
+                    <li class="footer"><a href="#footer">Footer</a></li>
+                </ul>
+            
+        </nav>
+    </header>
+
+    <section id="home" style=" background-image: url(./bg.jpg);"></section>
+    <section id="about" >About</section>
+    
+    <!--Product Display-->
+    <section id="product" >
+        <div class="products">
+
+            <div class="small-img">
+                <img  src="./shoe.jpg" alt="" onclick="myFunction(this)">
+                <img src="./shoe1.jpg" alt="" onclick="myFunction(this)">
+                <img  src="./shoe2.jpg" alt="" onclick="myFunction(this)">
+                <img src="./t1.png" alt="" onclick="myFunction(this)">
+            </div>
+
+            <div class="big-img">
+                <img id="display_img" src="./shoe1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" >Contact</section>
+    <section id="footer" >Footer</section>
+
+
+    <script src="main.js"></script>
+  
+
+
+</body>
+
+</html>

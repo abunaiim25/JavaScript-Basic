@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+    <!--https://www.w3schools.com/jsref/dom_obj_event.asp-->
+    
+        <!--=================using innerline====================-->
+
+    <button onclick="document.getElementById('testid1').innerHTML=Date()">Click Me</button>
+    <p id="testid1"></p>
+    <br>
+
+    <button onmouseover="document.getElementById('testid2').innerHTML=Date()">Click Me</button>
+    <p id="testid2"></p>
+
+    <br>
+    <button onmouseout="document.getElementById('testid3').innerHTML=Date()">Click Me</button>
+    <p id="testid3"></p>
+
+
+
+    <!--=================using function (dom.js)====================-->
+    <br>
+    <button onclick="xyz()">Onclick Function</button>
+    <p id="testid_1"></p>
+
+    <br>
+    <button onmouseover="xyz()">Onmouseover Function</button>
+    <p id="testid_2"></p>
+
+    <!--uppercase-->
+    <input type="text" onblur="input_function()" id="case">
+
+
+    <br>
+    <br>
+    <br>
+    <!--select-->
+    <select onchange="select_function()" name="" id="selectid">
+        <option value="">--- Select ---</option>
+        <option value="January">January</option>
+        <option value="Jebruary">February</option>
+        <option value="March">March</option>
+    </select>
+    <p id="result"></p>
+  
+
+
+    <!--=============JavaScript DOM Events#01 (eventlistener.js)================-->
+
+    <div class="box">
+
+    </div>
+
+     <!--=============JavaScript DOM Events#02 (eventlistener.js)================-->
+
+     <div class="outer">
+         <div class="inner">
+             
+         </div>
+     </div>
+
+     <!--=============JavaScript DOM Events#03 (eventlistener.js)================-->
+
+     <div class="parent">
+         <div class="red">red</div>
+         <div class="green">green</div>
+         <div class="blue">blue</div>
+     </div>
+
+     <div class="circle">circle</div>
+
+<!--===========Back to top button=================-->
+     <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+     </a>
+
+    <script src="dom.js"></script>
+    <script src="eventlistener.js"></script>
+    
+</body>
+</html>
