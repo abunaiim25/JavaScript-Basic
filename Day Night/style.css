@@ -1,0 +1,5 @@
+button{
+    background: coral;
+    padding: 10px 20px;
+    isolation: isolate;
+}
